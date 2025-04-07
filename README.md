@@ -1,3 +1,5 @@
+Information Retrival Project in Java
+
 Program: ir_fin.java
 Input: app.config file
 Output: 10 .txt files named "IR_iteration_i" where i = no. of each iteration
