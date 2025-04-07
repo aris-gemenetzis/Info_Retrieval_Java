@@ -20,32 +20,35 @@ Program functions:
 • int[][] generateRandomMatrix(int marks[][], int dense)
     
     Input: empty integer matrix, density percentage
-    
     Output: x% dense matrix with values from 1-5 following a normal distribution with s.d.=1 & mean=(1+2+3+4+5)/5=3
-    
     - any 'empty' places on the matrix are given the integer value '0' instead of null
 
 • double[][] createJaccard(int marks[][])
+
     Input: integer matrix
     Output: Jaccard similarity matrix
 
 • double[][] createCosine(int marks[][])
+
     Input: integer matrix
     Output: Cosine similarity matrix
     - missing values from integer matrix are treated as zeros
 
 • double[][] createPearson(int marks[][])
+
     Input: integer matrix
     Output: Pearson similarity matrix
     - counter variables are used to determine the number of valid (non-missing) values available
     - mean averages for each variable are rounded off after repeated testing showed it improved result accuracy
 
 • int[][] sortNeighbours(double similarity[][])
+
     Input: real number similarity matrix 
     Output: sorted integer matrix with the indexes of the closest neighbours for each user in descending similarity order
     - sorts similarity matrix for each row in descending order & stores the corresponding indexes
 
 • int[][] fillZeros(int marks[][], double similarity[][], int places[][], int k)
+
     Input: original integer matrix with x% density, similarity matrix, 
         matrix of indexes of closest neighbours in descending similarity order, 
         number of k required closest neighbours
@@ -54,6 +57,7 @@ Program functions:
         some of the elements of the 'filled' matrix may remain empty (value equal to 0)
 
 • double[][] generateEstimates(int filledmarks[][], double similarity[][], int places[][], int k)
+
     Input: original integer matrix with x% density, similarity matrix, 
         matrix of indexes of closest neighbours in descending similarity order, 
         number of k required closest neighbours
@@ -61,20 +65,24 @@ Program functions:
     - uses the same algorithm as fillZeros, except not limited to only missing (zero) values
 
 •  double[] calculateMAE(int filledmarks[][], double estimates[][])
+
     Input: filled integer matrix, real estimate matrix
     Output: real Mean Average Error matrix
     - computes Mean Average Error by comparing estimates to filled matrix values
 
 •  void writeFile (String fileName, String toPrint)
+
     Input: filename for writing, single string containing all of the results
     - prints string to file using the PrintWriter class
 
 • int[][] transposeMatrix(int marks[][])
+
     Input: original integer matrix
     Output: transposed integer matrix 
     - the transposed matrix is used for any object-to-object calculations without having to rewrite any of the previous functions
 
 • double[] calculateErrors (int marks[][], double similarity[][], int k)
+
     Input: original integer matrix, given similarity matrix, number of k closest neighbours
     Output: MAE matrix 
     - calculateErrors calls all the functions required to calculate the MAE for each similarity
