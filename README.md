@@ -1,7 +1,9 @@
 Information Retrival Project in Java
 
 Program: ir_fin.java
+
 Input: app.config file
+
 Output: 10 .txt files named "IR_iteration_i" where i = no. of each iteration
 - each .txt file contains the randomly generated x% density matrix & MAE values for all six similarities
 - output files are stored on the same path as the runnable .jar file (but that can be modified by editing the static OUTPUT_FILEPATH variable)
@@ -13,6 +15,7 @@ Output: 10 .txt files named "IR_iteration_i" where i = no. of each iteration
 
 
 Program functions:
+
 • int[][] generateRandomMatrix(int marks[][], int dense)
     Input: empty integer matrix, density percentage
     Output: x% dense matrix with values from 1-5 following a normal distribution with s.d.=1 & mean=(1+2+3+4+5)/5=3
