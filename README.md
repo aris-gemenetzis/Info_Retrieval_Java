@@ -14,11 +14,15 @@ Output: 10 .txt files named "IR_iteration_i" where i = no. of each iteration
 - the source code includes multiple print commands used for debugging purposes in the comments
 
 
+
 Program functions:
 
 • int[][] generateRandomMatrix(int marks[][], int dense)
+    
     Input: empty integer matrix, density percentage
+    
     Output: x% dense matrix with values from 1-5 following a normal distribution with s.d.=1 & mean=(1+2+3+4+5)/5=3
+    
     - any 'empty' places on the matrix are given the integer value '0' instead of null
 
 • double[][] createJaccard(int marks[][])
