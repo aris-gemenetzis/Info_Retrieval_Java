@@ -17,32 +17,27 @@ Output: 10 .txt files named "IR_iteration_i" where i = no. of each iteration
 
 Program functions:
 
-• int[][] generateRandomMatrix(int marks[][], int dense)
-    
+    int[][] generateRandomMatrix(int marks[][], int dense)
     Input: empty integer matrix, density percentage
     Output: x% dense matrix with values from 1-5 following a normal distribution with s.d.=1 & mean=(1+2+3+4+5)/5=3
     - any 'empty' places on the matrix are given the integer value '0' instead of null
 
-• double[][] createJaccard(int marks[][])
-
+    double[][] createJaccard(int marks[][])
     Input: integer matrix
     Output: Jaccard similarity matrix
 
-• double[][] createCosine(int marks[][])
-
+    double[][] createCosine(int marks[][])
     Input: integer matrix
     Output: Cosine similarity matrix
     - missing values from integer matrix are treated as zeros
 
-• double[][] createPearson(int marks[][])
-
+    double[][] createPearson(int marks[][])
     Input: integer matrix
     Output: Pearson similarity matrix
     - counter variables are used to determine the number of valid (non-missing) values available
     - mean averages for each variable are rounded off after repeated testing showed it improved result accuracy
 
-• int[][] sortNeighbours(double similarity[][])
-
+    int[][] sortNeighbours(double similarity[][])
     Input: real number similarity matrix 
     Output: sorted integer matrix with the indexes of the closest neighbours for each user in descending similarity order
     - sorts similarity matrix for each row in descending order & stores the corresponding indexes
