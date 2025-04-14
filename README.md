@@ -1,4 +1,4 @@
-Information Retrival BSc Project in Java
+Information Retrieval BSc Project in Java
 
 Program: ir_fin.java
 
