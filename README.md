@@ -10,7 +10,6 @@ Output: 10 .txt files named "IR_iteration_i" where i = no. of each iteration
 - the app.config file is required to successfully run the program. place it on the same folder as the runnable .jar file
 - instead of having separate functions for user-to-user & item-to-item similarity operations, the original matrix is transposed & used as input
 - all error values are rounded off at two (2) decimal points
-- graphs of all experiment results are included in a .docx file, allowing for detailed data value inspection
 - the source code includes multiple print commands used for debugging purposes in the comments
 
 
